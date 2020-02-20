@@ -18,8 +18,8 @@ import * as api from '@/utils/api'
 export default {
   data() {
     return {
-      username: 'admin@email.com',
-      password: 'password',
+      username: '',
+      password: '',
     }
   },
   methods: {
@@ -33,6 +33,8 @@ export default {
         formData.append('client_secret', process.env.VUE_APP_CLIENT_SECRET)
 
         const res = await axios.post(api.login(), formData)
+        this.$auth.setToken(res.data.access_token, res.data.expires_in + Date.now())
+        this.$router.go({ name: 'home' }) 
         console.log(res)
       } catch (error) {
         console.log(error)
