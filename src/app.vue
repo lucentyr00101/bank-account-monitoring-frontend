@@ -1,6 +1,7 @@
 <template lang="pug">
   v-app
     v-navigation-drawer(app v-if="this.$auth.isAuthenticated()")
+    v-app-bar(app)
     v-content
       v-container.h-100(fluid)
         router-view
