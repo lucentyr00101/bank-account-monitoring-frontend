@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
   .menu-active-list
     color #f7a7a6 !important
 </style>
