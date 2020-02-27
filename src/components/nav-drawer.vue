@@ -10,7 +10,7 @@
         template(v-slot:activator)
           v-list-item-content
             v-list-item-title(v-text="item.title")
-        v-list-item(v-for="subItem in item.items" :key="subItem.title" @click="" :to="subItem.link")
+        v-list-item(active-class="menu-active-sub-list" v-for="subItem in item.items" :key="subItem.title" @click="" :to="subItem.link")
           v-list-item-content
             v-list-item-title(v-text="subItem.title")
 </template>

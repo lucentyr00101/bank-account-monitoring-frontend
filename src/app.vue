@@ -30,4 +30,6 @@ export default {
       height 100%
     .menu-active-list
       color #f7a7a6 !important
+    .menu-active-sub-list
+      color #000 !important
 </style>
