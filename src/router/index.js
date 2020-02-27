@@ -29,7 +29,7 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'profile',
+        name: 'show-profile',
         component: () => import('@/views/profile/show')
       }
     ]
