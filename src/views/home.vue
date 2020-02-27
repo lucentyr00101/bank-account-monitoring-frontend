@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-btn(color="success") Test
+  h1 Homepage
 </template>
 
 <script>

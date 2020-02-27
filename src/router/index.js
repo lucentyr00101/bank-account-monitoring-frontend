@@ -19,6 +19,20 @@ const routes = [
     meta: {
       forAuth: true
     }
+  },
+  {
+    path: '/profile',
+    component: () => import('@/base/profile'),
+    meta: {
+      forAuth: true
+    },
+    children: [
+      {
+        path: '',
+        name: 'profile',
+        component: () => import('@/views/profile/show')
+      }
+    ]
   }
 ]
 
