@@ -33,6 +33,20 @@ const routes = [
         component: () => import('@/views/profile/show')
       }
     ]
+  },
+  {
+    path: '/funds-management',
+    component: () => import('@/base/funds'),
+    meta: {
+      forAuth: true
+    },
+    children: [
+      {
+        path: 'add',
+        name: 'add-funds',
+        component: () => import('@/views/funds/create')
+      }
+    ]
   }
 ]
 

@@ -25,8 +25,15 @@ export default {
           action: 'mdi-settings',
           title: 'Settings',
           items: [
-            { title: 'Profile Settings', link: { name: 'show-profile' } }
+            { title: 'Profile Settings', link: { name: 'show-profile' } },
           ],
+        },
+        {
+          action: 'mdi-cash-multiple',
+          title: 'Funds Management',
+          items: [
+            { title: 'Add Funds', link: { name: 'add-funds' } }
+          ]
         }
       ]
     }
