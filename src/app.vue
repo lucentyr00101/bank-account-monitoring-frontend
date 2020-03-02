@@ -1,9 +1,8 @@
 <template lang="pug">
   v-app
 
-    nav-drawer
-
-    nav-bar
+    nav-drawer(v-if="this.$auth.isAuthenticated()")
+    app-bar(v-if="this.$auth.isAuthenticated()")
 
     v-content
       v-container.h-100(fluid)
@@ -17,8 +16,8 @@
 export default {
   components: {
     navDrawer: () => import('@/components/nav-drawer'),
-    navBar: () => import('@/components/nav-bar')
-  },
+    appBar: () => import('@/components/app-bar')
+  }
 }
 </script>
 
