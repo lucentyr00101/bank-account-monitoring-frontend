@@ -45,6 +45,11 @@ const routes = [
         path: 'add',
         name: 'add-funds',
         component: () => import('@/views/funds/create')
+      },
+      {
+        path: 'list',
+        name: 'list-funds',
+        component: () => import('@/views/funds/list')
       }
     ]
   }

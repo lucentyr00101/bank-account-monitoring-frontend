@@ -5,3 +5,7 @@ export const login = () => {
 export const postFund = () => {
   return `/api/funds/`
 }
+
+export const listFunds = () => {
+  return `/api/funds/`
+}

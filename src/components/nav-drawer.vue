@@ -32,6 +32,7 @@ export default {
           action: 'mdi-cash-multiple',
           title: 'Funds Management',
           items: [
+            { title: 'Funds List', link: { name: 'list-funds' } },
             { title: 'Add Funds', link: { name: 'add-funds' } }
           ]
         }
