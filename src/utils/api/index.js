@@ -7,5 +7,5 @@ export const postFund = () => {
 }
 
 export const listFunds = () => {
-  return `/api/funds/`
+  return `/api/funds`
 }
