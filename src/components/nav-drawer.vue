@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-navigation-drawer(app v-if="this.$auth.isAuthenticated()" clipped v-model="drawer" color="secondary lighten-2" expand-on-hover :mini-variant="true")
+  v-navigation-drawer(app v-if="this.$auth.isAuthenticated()" clipped v-model="drawer" color="secondary lighten-2")
     v-list(dense)
       v-list-item(@click="" :to="{ name: 'home' }")
         v-list-item-icon
@@ -41,3 +41,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+  .menu-active-list
+    color #f7a7a6 !important
+</style>
