@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-data-table(:headers="headers" :items="logs" :items-per-page="5")
+  v-data-table(:headers="headers" :items="logs" :items-per-page="10")
 </template>
 
 <script>

@@ -22,20 +22,20 @@ export default {
       drawer: true,
       items: [
         {
-          action: 'mdi-settings',
-          title: 'Settings',
-          items: [
-            { title: 'Profile Settings', link: { name: 'show-profile' } },
-          ],
-        },
-        {
           action: 'mdi-cash-multiple',
           title: 'Funds Management',
           items: [
             { title: 'Funds List', link: { name: 'list-funds' } },
             { title: 'Add Funds', link: { name: 'add-funds' } }
           ]
-        }
+        },
+        {
+          action: 'mdi-settings',
+          title: 'Settings',
+          items: [
+            { title: 'Profile Settings', link: { name: 'show-profile' } },
+          ],
+        },
       ]
     }
   }
